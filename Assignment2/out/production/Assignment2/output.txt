@@ -1,0 +1,129 @@
+Shipment: [S, NY, 23, 14, 1]
+23 of item1 shipped  to NY
+14 of item2 shipped  to NY
+1 of item3 shipped  to NY
+Adjusted stock: NY [23, 14, 1]
+
+Shipment: [S, MIA, 25, 25, 25]
+25 of item1 shipped  to MIA
+25 of item2 shipped  to MIA
+25 of item3 shipped  to MIA
+Adjusted stock: MIA [25, 25, 25]
+
+Shipment: [S, LA, 40, 13, 17]
+40 of item1 shipped  to LA
+13 of item2 shipped  to LA
+17 of item3 shipped  to LA
+Adjusted stock: LA [40, 13, 17]
+
+Shipment: [S, HOU, 100, 30, 10]
+100 of item1 shipped  to HOU
+30 of item2 shipped  to HOU
+10 of item3 shipped  to HOU
+Adjusted stock: HOU [100, 30, 10]
+
+Shipment: [S, CHI, 42, 23, 19]
+42 of item1 shipped  to CHI
+23 of item2 shipped  to CHI
+19 of item3 shipped  to CHI
+Adjusted stock: CHI [42, 23, 19]
+
+Shipment: [S, NY, 0, 0, 0]
+0 of item1 shipped  to NY
+0 of item2 shipped  to NY
+0 of item3 shipped  to NY
+Adjusted stock: NY [23, 14, 1]
+
+Shipment: [S, MIA, 13, 17, 21]
+13 of item1 shipped  to MIA
+17 of item2 shipped  to MIA
+21 of item3 shipped  to MIA
+Adjusted stock: MIA [38, 42, 46]
+
+Order: [O, LA, 15, 10, 15]
+15 of item1 shipped from CHI to LA
+10 of item2 shipped from CHI to LA
+15 of item3 shipped from CHI to LA
+Adjusted stock: LA [55, 23, 32]
+Price of Order: $356.95
+
+Order: [O, NY, 12, 24, 8]
+12 of item1 shipped from HOU to NY
+24 of item2 shipped from HOU to NY
+8 of item3 shipped from HOU to NY
+Adjusted stock: NY [35, 38, 9]
+Price of Order: $366.96
+
+Order: [O, HOU, 75, 45, 10]
+Order unfilled.
+
+Order: [O, CHI, 20, 15, 15]
+20 of item1 shipped from LA to CHI
+15 of item2 shipped from LA to CHI
+15 of item3 shipped from LA to CHI
+Adjusted stock: CHI [47, 28, 19]
+Price of Order: $419.38
+
+Order: [O, NY, 15, 0, 0]
+15 of item1 shipped from LA to NY
+0 of item2 shipped from LA to NY
+0 of item3 shipped from LA to NY
+Adjusted stock: NY [50, 38, 9]
+Price of Order: $57.75
+
+Shipment: [S, LA, 10, 20, 10]
+10 of item1 shipped  to LA
+20 of item2 shipped  to LA
+10 of item3 shipped  to LA
+Adjusted stock: LA [30, 28, 27]
+
+Shipment: [S, HOU, 0, 30, 30]
+0 of item1 shipped  to HOU
+30 of item2 shipped  to HOU
+30 of item3 shipped  to HOU
+Adjusted stock: HOU [88, 36, 32]
+
+Order: [O, NY, 15, 15, 25]
+15 of item1 shipped from LA to NY
+15 of item2 shipped from LA to NY
+25 of item3 shipped from LA to NY
+Adjusted stock: NY [65, 53, 34]
+Price of Order: $542.03
+
+Order: [O, CHI, 75, 30, 40]
+Order unfilled.
+
+Shipment: [S, NY, 20, 15, 20]
+20 of item1 shipped  to NY
+15 of item2 shipped  to NY
+20 of item3 shipped  to NY
+Adjusted stock: NY [85, 68, 54]
+
+Order: [O, HOU, 10, 20, 10]
+10 of item1 shipped from NY to HOU
+20 of item2 shipped from NY to HOU
+10 of item3 shipped from NY to HOU
+Adjusted stock: HOU [98, 56, 42]
+Price of Order: $353.10
+
+Order: [O, NY, 19, 0, 90]
+Order unfilled.
+
+Shipment: [S, MIA, 6, 8, 15]
+6 of item1 shipped  to MIA
+8 of item2 shipped  to MIA
+15 of item3 shipped  to MIA
+Adjusted stock: MIA [44, 50, 61]
+
+Shipment: [S, HOU, 7, 12, 30]
+7 of item1 shipped  to HOU
+12 of item2 shipped  to HOU
+30 of item3 shipped  to HOU
+Adjusted stock: HOU [105, 68, 72]
+
+Order: [O, LA, 32, 10, 0]
+32 of item1 shipped from NY to LA
+10 of item2 shipped from NY to LA
+0 of item3 shipped from NY to LA
+Adjusted stock: LA [47, 23, 2]
+Price of Order: $209.55
