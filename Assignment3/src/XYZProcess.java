@@ -27,7 +27,6 @@ public class XYZProcess {
         USD = NumberFormat.getCurrencyInstance(Locale.US);
     }
 
-
     protected void processCards() {
         for(Object[] tr : records.getModel()) {
             switch(tr[0].toString()) {
@@ -98,7 +97,7 @@ public class XYZProcess {
     protected void fillOrder(int requestedQty, List<Widget> soldWidgets) {
         double total = 0.00;
         System.out.printf("%n%d Widgets Sold%n", requestedQty);
-        // 	∀(w ∈ Widget)
+        // 	∀w ∈ Widget
         for(Widget w : soldWidgets) {
             // display widget qty, price per qty and sales total.
             System.out.printf("%d at %s each\t Sales: %s%n",
