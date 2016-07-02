@@ -1,0 +1,132 @@
+Enter a master path: 
+master.txt
+Enter a records path: 
+records.txt
+7 customers available.
+
+1. Print All Customers
+2. Print All Invoices
+3. Search Customers
+4. Exit
+Enter an option (1-4): 3
+Enter a customer's ID or full name to search: 9777
+Customer found
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Jacob vonBronstein                    9777              $100.91
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER   Isku Mechanical Keyboard          1      $99.99
+     2  PAYMENT                          -          -      $20.00
+     3    ORDER      Cyborg R.A.T. 9 Mouse          1     $149.99
+     4    ORDER          Astro A40 Headset          2     $149.99
+     5  PAYMENT                          -          -     $100.00
+
+                                          BALANCE DUE:    $429.96
+
+1. Print All Customers
+2. Print All Invoices
+3. Search Customers
+4. Exit
+Enter an option (1-4): 2
+Printing invoices for 7 customers
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Jamie Masterson                       5647            $9,642.88
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER         Barracuda Firewall          2   $3,799.00
+     2    ORDER       Asus X99 Motherboard          1     $379.99
+     3  PAYMENT                          -          -     $512.22
+     4    ORDER      Corsair Obsidian Case          1     $173.99
+     5    ORDER             Dell PowerEdge          1     $179.99
+
+                                          BALANCE DUE:  $7,819.75
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Drake Strouss                         5689                $0.00
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER       Asus X99 Motherboard          2     $379.99
+     2    ORDER            Crucial 8GB RAM          4     $154.99
+     3  PAYMENT                          -          -     $254.00
+     4    ORDER           Cooler Master V8          1      $89.99
+     5  PAYMENT                          -          -      $50.00
+
+                                          BALANCE DUE:  $1,165.93
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Edward Bruno                          5691                $5.82
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER            Crucial 8GB RAM          2     $154.99
+     2  PAYMENT                          -          -     $154.99
+     3    ORDER        MSI Z97 Motherboard          1     $139.99
+     4  PAYMENT                          -          -     $100.00
+     5    ORDER      NZXT PC Water Cooling          1     $114.99
+
+                                          BALANCE DUE:    $309.97
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Alfred Neeway                         6382                $0.00
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER       Asus X99 Motherboard          1     $379.99
+     2    ORDER      NVIDIA GeForce GTX980          2     $469.99
+     3    ORDER         Thermaltake Cooler          1     $409.99
+     4    ORDER           Crucial 16GB RAM          4     $239.99
+     5  PAYMENT                          -          -     $512.50
+
+                                          BALANCE DUE:  $2,177.42
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Lucien Skywalker                      6785            $5,872.73
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER    Razer Core External GPU          5     $499.99
+     2    ORDER       LG 55" 4K Ultra HDTV          5     $679.97
+     3    ORDER   Bose Multimedia Speakers          2     $176.99
+     4  PAYMENT                          -          -     $512.50
+     5    ORDER  Xbox One Elite Controller          5     $149.00
+
+                                          BALANCE DUE:  $6,486.28
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Jacob vonBronstein                    9777              $429.96
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER   Isku Mechanical Keyboard          1      $99.99
+     2  PAYMENT                          -          -      $20.00
+     3    ORDER      Cyborg R.A.T. 9 Mouse          1     $149.99
+     4    ORDER          Astro A40 Headset          2     $149.99
+     5  PAYMENT                          -          -     $100.00
+
+                                          BALANCE DUE:    $429.96
+
+---INVOICE------
+CUSTOMER NAME                  CUSTOMER ID         PAST BALANCE
+Lucas Fine                            9913                $0.00
+
+TRANSACTIONS
+     #     TYPE                  ITEM NAME   QUANTITY      AMOUNT
+     1    ORDER        Fractal 804 PC Case         50     $116.00
+     2  PAYMENT                          -          -   $1,000.00
+     3    ORDER Asus Z10PR-D16 Motherboard         50     $392.00
+     4  PAYMENT                          -          -     $980.00
+     5    ORDER   Intel Broadwell i7 6950X         50   $1,599.99
+
+                                          BALANCE DUE: $103,419.50
