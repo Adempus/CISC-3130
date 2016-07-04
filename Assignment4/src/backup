@@ -1,0 +1,136 @@
+
+    public static BinaryTree<Integer> intTree;
+    public static BinaryTree<Character> charTree;
+    public static BinaryTree<String> strTree;
+    public static void main(String[] args) {
+        createIntTree();
+        createCharTree();
+        createStringTree();
+        while(!intTree.isEmpty()) {
+            deleteNode();
+            System.out.println("\n" +intTree.count());
+            System.out.println("\n" + intTree.max());
+            System.out.println("\n" + intTree.min());
+        }
+        //System.out.println(intTree.getChildren(70));
+        //findNode();
+    }
+
+    public static void createStringTree() {
+        strTree = new BinaryTree<>("1");
+        strTree.insertValues("2", "3" , "4");
+        System.out.println("\nPREORDER:");
+        strTree.printPreOrder();
+        System.out.println("\nINORDER: ");
+        strTree.printInOrder();
+        System.out.println("\nPOSTORDER:");
+        strTree.printPostOrder();
+    }
+
+    public static void createIntTree() {
+        intTree = new BinaryTree<>(292);
+        System.out.println(intTree.count());
+        intTree.insertValues(311, 412, 384,
+                150, 421, 493, 489, 376, 140,
+                120, 492, 462, 398,147);
+        printIntTree();
+        System.out.println("\nSize: " + intTree.count());
+    }
+
+    public static void createCharTree() {
+        charTree = new BinaryTree<>('B');
+        charTree.insertValues('T', 'E', 'A', 'N', 'W','J');
+        printCharTree();
+    }
+
+    public static void printCharTree() {
+        System.out.println("\nPREORDER:");
+        charTree.printPreOrder();
+        System.out.println("\nINORDER: ");
+        charTree.printInOrder();
+        System.out.println("\nPOSTORDER:");
+        charTree.printPostOrder();
+        //System.out.println("\nSize: " + charTree.count());
+    }
+
+    public static void getSize() {
+
+    }
+
+    public static void deleteNode() {
+        System.out.println("Delete which node?");
+        int deletion = new Scanner(System.in).nextInt();
+        intTree.deleteValue(deletion);
+        printIntTree();
+    }
+
+    public static void printIntTree() {
+        //11, 25, 75, 12, 37, 60, 90, 8, 15, 32, 45, 50, 67, 97, 95
+        // 12, 30, 19, 8, 50, 3, 84, 29, 57, 6, 2, 7
+        System.out.println("PREORDER:");
+        intTree.printPreOrder();
+        System.out.println("\nINORDER: ");
+        intTree.printInOrder();
+        System.out.println("\nPOSTORDER:");
+        intTree.printPostOrder();
+    }
+    /*
+    public static void option() {
+        System.out.println("Choose an option." +
+            "\n1. print" +
+            "\n2. count" +
+            "\n3. find" +
+            "\n4. count children");
+
+        int option = new Scanner(System.in).nextInt();
+        switch(option) {
+            case 1 : System.out.println("Print from what tree: "+
+                        "\n1. charTree \n2. intTree\n");
+                int option2 = new Scanner(System.in).nextInt();
+                switch(option2) {
+                    case 1 : System.out.println("")
+                }
+        }
+    }
+
+    public static void findNode() {
+        Object foundNode = null;
+        System.out.println("\nFind value from which tree? " +
+            "\n1. charTree \n2.intTree");
+        int choice = new Scanner(System.in).nextInt();
+        switch(choice) {
+            case 1 :
+                System.out.println("Find value for charTree: ");
+                char charKey = new Scanner(System.in).nextLine().charAt(0);
+                foundNode = charTree.find(charKey);
+                break;
+            case 2 :
+                System.out.print("Find value for intTree: ");
+                int intKey = new Scanner(System.in).nextInt();
+                foundNode = intTree.find(intKey);
+                break;
+            default:
+                System.out.println("Invalid option.");
+                break;
+        }
+
+        if(foundNode != null) {
+            System.out.println("Found: " + ((Tree.Node) foundNode).getDatum());
+        } else {
+            System.out.println("Cannot find value.");
+        }
+    }
+
+    public void printTreeOrders() {
+    }
+
+    public static void getChildren() {
+        System.out.println("Get child count for which tree? " +
+                "\n1. charTree \n2. intTree");
+        int choice = new Scanner(System.in).nextInt();
+        switch(choice) {
+            case 1 :
+                charTree.getChildren()
+        }
+    }
+    */
