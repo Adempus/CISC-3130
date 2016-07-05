@@ -2,11 +2,13 @@ package Tree;
 
 /**
  * Jeff Morin
- * Assignment4
- * 7/2/16
+ * Assignment 4
+ * CISC 3130
+ * 6/26/16
  */
 
-public class Node<T extends Comparable<T>> {
+public class Node<T extends Comparable<T>>
+{
     protected T datum;
     protected Node<T> parent;
     protected Node<T> leftChild;
