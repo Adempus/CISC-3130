@@ -10,7 +10,7 @@ import java.io.File;
 import java.util.*;
 
 public class Main {
-    public static BinaryTree[] forrest;
+    public static BinaryTree[] forest;
     public static CSVModel treeDataModel;
 
     public static void main(String[] args)
@@ -21,9 +21,9 @@ public class Main {
         );
 
         int i = 0;
-        forrest = new BinaryTree[100];
+        forest = new BinaryTree[100];
         for(Object[] o : treeDataModel.getModel()) {
-            forrest[i] = createTree(parseData(o));
+            forest[i] = createTree(parseData(o));
             i++;
         }
         System.out.println(i + " sets of trees created from data.");
@@ -37,22 +37,22 @@ public class Main {
             int set = new Scanner(System.in).nextInt();
             int operation;
 
-            optionLoop: do {
+            operationLoop: do {
                 System.out.println("\nPerform an operation on set " + set + ": " +
                         "\n1. Print orders\t 2. Insert Data" + "\n3. Delete Data\t 4. Count nodes"
                         + "\n5. Get max\t\t 6. Get min" + "\n7. Free tree\t 8. Choose another set."
                         + "\n9. Exit.");
                 operation = new Scanner(System.in).nextInt();
                 switch (operation) {
-                    case 1 : printTreeOrders(forrest[set]); break;
-                    case 2 : insertValue(forrest[set]); break;
-                    case 3 : deleteValue(forrest[set]); break;
-                    case 4 : printCount(forrest[set]); break;
-                    case 5 : System.out.println("Max: " + findMax(forrest[set])); break;
-                    case 6 : System.out.println("Min: " + findMin(forrest[set])); break;
-                    case 7 : freeTree(forrest[set]); break;
+                    case 1 : printTreeOrders(forest[set]); break;
+                    case 2 : insertValue(forest[set]); break;
+                    case 3 : deleteValue(forest[set]); break;
+                    case 4 : printCount(forest[set]); break;
+                    case 5 : System.out.println("Max: " + findMax(forest[set])); break;
+                    case 6 : System.out.println("Min: " + findMin(forest[set])); break;
+                    case 7 : freeTree(forest[set]); break;
                     case 9 : exit = true;
-                    default : break optionLoop;
+                    default : break operationLoop;
                 }
             } while(true);
         }
@@ -73,7 +73,7 @@ public class Main {
     }
 
     // TODO: method to insert the tree's initial values
-    public static void insertValue(BinaryTree tree) {
+    public static void insertValue(BinaryTree<Integer> tree) {
         System.out.print("Enter an insertion value: ");
         int value = new Scanner(System.in).nextInt();
         tree.insert(value);
