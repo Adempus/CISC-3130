@@ -5,6 +5,7 @@
  * 6/26/16
  *
  */
+ 
 import Tree.BinaryTree;
 import java.io.File;
 import java.util.*;
@@ -35,14 +36,13 @@ public class Main {
         while(!exit) {
             System.out.println("\nView data from which set? ");
             int set = new Scanner(System.in).nextInt();
-            int operation;
 
             operationLoop: do {
                 System.out.println("\nPerform an operation on set " + set + ": " +
                         "\n1. Print orders\t 2. Insert Data" + "\n3. Delete Data\t 4. Count nodes"
                         + "\n5. Get max\t\t 6. Get min" + "\n7. Free tree\t 8. Choose another set."
                         + "\n9. Exit.");
-                operation = new Scanner(System.in).nextInt();
+                int operation = new Scanner(System.in).nextInt();
                 switch (operation) {
                     case 1 : printTreeOrders(forest[set]); break;
                     case 2 : insertValue(forest[set]); break;
