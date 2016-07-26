@@ -1,0 +1,30 @@
+You are to write a program for a hardware company's Accounts Recievable department (A/R are accounts that own money to the company because 
+they have purchaced items and have not yet paid for them.) 
+
+There are two types of input data:
+
+1) A master file in ascending order by customer number (customer numbers are 4 digits long). The file also contains a 20 characrer name
+    and a balance due.
+
+2) Transaction file that contains records of each transaction. This file is also in ascending order by customer number. There should be 
+    more than one transaction record per master record. Each related group of data in a file is called a record. A record should be stored in a
+    structure.
+    
+Each record starts with a character "O" for order or "P" for paymernt. Each record also contains te four digit number, a four digit transaction 
+number, and up to three more values.
+
+If the code is "O", the record contains the item ordered (20 characters), the quantity ordered (an integer) plus the cost of the item 
+(You must multiply to get the total cost.)
+
+If the code is "P", the record contains the amount of the payment. 
+
+You are to read in records one at a time from the two files and use the transaction file recors to update the master file. Process all 
+transaction records for each master record before going on to the nest master record. If the transaction record contains an "O" in column
+1, calculate the order amount and add it to the balance due. If the reocrd contains a "P" in column 1, subtract the payment from the 
+balance due. Keep a running total of the A/R balance of ABC company (that is the sum of balances due for each customer)
+
+Your program should:
+Check for errors such a duplicate master records, or records in the transaction file that do not appear in the master file. 
+
+After processing a master record and all of its transaction, the program should prepare an invoice for each customer which lists the
+customer name, number, previous balance (balance before transcations were performed), all tranactions, and the final balance due. 
