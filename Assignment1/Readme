@@ -3,12 +3,9 @@ they have purchaced items and have not yet paid for them.)
 
 There are two types of input data:
 
-1) A master file in ascending order by customer number (customer numbers are 4 digits long). The file also contains a 20 characrer name
-    and a balance due.
+1) A master file in ascending order by customer number (customer numbers are 4 digits long). The file also contains a 20 characrer name and a balance due.
 
-2) Transaction file that contains records of each transaction. This file is also in ascending order by customer number. There should be 
-    more than one transaction record per master record. Each related group of data in a file is called a record. A record should be stored in a
-    structure.
+2) Transaction file that contains records of each transaction. This file is also in ascending order by customer number. There should be more than one transaction record per master record. Each related group of data in a file is called a record. A record should be stored in astructure.
     
 Each record starts with a character "O" for order or "P" for paymernt. Each record also contains te four digit number, a four digit transaction 
 number, and up to three more values.
