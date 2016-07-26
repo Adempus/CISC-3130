@@ -1,0 +1,8 @@
+Create a binary search tree in a language of your choice.
+The tree class you create must have methods defined for inserting and deleting a value , traversals (pre, in, post), finding a value, counting the numebr of nodes in 
+the tree, counting the number of children a node has. The program should read in sets of random numbers from a file, and create a binary tree for each set.
+
+Also, construct an interactive menu that allows the binary search tree operations to be performed by the user on the set of trees. 
+
+** Extra credit **
+Make your binary tree capable of processing all primitive types (not just ints), or objects of natural ordering. 
