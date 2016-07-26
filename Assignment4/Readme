@@ -4,13 +4,13 @@ The tree class you create must have methods defined for:
     *Inserting and deleting a value.
     *Pre, in, and post order traversals.
     *Finding a value.
-    *Counting the numebr of nodes in the tree (the tree's size)
-    *Counting the number of levels in the tree.
-    *Retrieving the number children, the parent, and the level of a node.  
+    *Counting the number of nodes in the tree (the tree's size)
+    *Counting the number of levels the tree has.
+    *Retrieving the number of children, the parent, and the level of a node.  
     *Freeing all the values of a tree.
     
 The program should read in sets of random numbers from a file, and create a binary tree for each set.
-Also, construct an interactive menu that allows the binary search tree operations to be performed by the user on the set of trees. 
+Also, construct an interactive menu that allows the binary search tree operations to be performed by the user, on the set of trees. 
 
 ** Extra credit **
 Make your binary tree capable of processing all primitive types (not just ints), or objects of natural ordering. 
