@@ -3,8 +3,10 @@ The tree class you create must have methods defined for:
 
     *Inserting and deleting a value.
     *Pre, in, and post order traversals.
-    *Finding a value.
-    *Counting the number of nodes in the tree (the tree's size)
+    *Finding a value and returning it's node.
+    *Finding the smallest value.
+    *Finding the largest value.
+    *Counting the number of nodes in the tree (the tree's size).
     *Counting the number of levels the tree has.
     *Retrieving the number of children, the parent, and the level of a node.  
     *Freeing all the values of a tree.
